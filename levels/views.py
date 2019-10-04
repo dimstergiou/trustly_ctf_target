@@ -6,6 +6,9 @@ import pycard
 def index(request):
     return render(request, "index.html", {})
 
+def indexDemo(request):
+    return render(request, "index2.html", {})
+
 def level1(request):
     return render(request, "levels/l1.html", {'level':1})
 
