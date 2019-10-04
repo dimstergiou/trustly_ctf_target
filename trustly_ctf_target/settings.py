@@ -25,7 +25,7 @@ SECRET_KEY = '8hrk*_djvsfr8#jjs56n8j($)c568w4+za3&tb!r0wnqn-lmp#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['trustlyctf.herokuapps.com']
+ALLOWED_HOSTS = ['trustlyctf.herokuapp.com']
 
 
 # Application definition
