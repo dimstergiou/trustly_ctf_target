@@ -1,3 +1,5 @@
 .idea/
 dbsqlite3.db
 /venv/
+*.pyc
+__pycache__/

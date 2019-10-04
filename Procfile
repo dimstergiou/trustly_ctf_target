@@ -1,0 +1,1 @@
+web: gunicorn trustly_ctf_target.wsgi --log-file -
