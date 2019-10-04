@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<h2>Level {{ level }}</h2>
+    <br>
+    <p>
+        <img src="{% static "levels/cookiemonster.jpg" %}" alt="Cookie monster" style="width: 50%; height: 50%" />
+    </p>
+{% endblock %}

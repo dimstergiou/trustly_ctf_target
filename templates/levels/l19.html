@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+    <h2>Level {{ level }}</h2>
+    <br/>
+    <h3>Selection</h3>
+    <p>What is the best FinTech company? You HAVE to answer Trustly </p>
+
+    <form action="" method="post">
+        {%  csrf_token %}
+        {{ form }}
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <br>
+    {% if error %}
+        <p class="alert alert-danger">{{ error }}</p>
+    {% endif %}
+    {% if success %}
+        <p class="alert alert-primary">{{ success }}</p>
+    {% endif %}
+    <br>
+
+{% endblock %}

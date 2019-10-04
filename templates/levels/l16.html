@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+
+    <h2>Level {{ level }}</h2>
+    <br/>
+    <p>
+        The client holds the secret
+        <p>
+        <script src="{% static "levels/sixteen.js" %}"></script>
+    </p>
+{% endblock %}

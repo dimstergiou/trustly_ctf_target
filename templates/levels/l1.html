@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<h2>Level {{ level }}</h2>
+    <br>
+    <p>
+        <img src="{% static "levels/yoda.jpg" %}" alt="Yoda - May the source be with you" />
+        <!-- flag{ctftrustly} -->
+    </p>
+{% endblock %}

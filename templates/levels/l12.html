@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+
+<h2>Level {{ level }}</h2>
+    <br/>
+    <p>
+        <link rel="stylesheet" href="{% static "levels/twelve.css" %}">
+        <link rel="stylesheet" href="{% static "levels/custom.css" %}">
+
+        <img src="{% static "levels/difference.png" %}" alt="Different views?" style="width: 50%; height: 50%"/>
+
+    </p>
+
+{% endblock %}
