@@ -37,9 +37,7 @@ def level9(request):
             password = form.cleaned_data['password']
             if valid_credentials(username,password):
                 success = 'Correct: The flag is: flag{lego}'
-                error = None
             else:
-                success = None
                 error = 'Error: Invalid login'
     else:
         form = LoginForm()
@@ -97,14 +95,12 @@ def level19(request):
             company = form.cleaned_data['company'].lower()
             if company == "trustly":
                 success = 'Correct: The flag is: flag{oscar}'
-                error = None
             else:
-                success = None
                 error = 'Error: Not the answer we are looking for'
     else:
         form = BestCompany()
     context = {
-        'level': reverse('l9'),
+        'level': reverse('l19'),
         'form': form,
         'error': error,
         'success': success,
@@ -143,9 +139,7 @@ def level25(request):
             cc = pycard.Card(number=card, month=1, year=2020, cvc=123)
             if cc.is_valid:
                 success = 'Correct: The flag is: flag{money}'
-                error = None
             else:
-                success = None
                 error = 'Not a valid credit card'
     else:
         form = CreditCard()
