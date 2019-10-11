@@ -24,6 +24,8 @@ urlpatterns = [
     path('eaff21cfa63a828f34f02f4bc739a5de', views.level9, name='l9'),
 
     path('level12', views.level12, name='l12'),
+    path('e3cb9dac40a829e5d0194b8fadc5ea0b', views.level12, name='l12'),
+
     path('level13', views.level13, name='l13'),
     path('level13.old', views.level13_flag, name='l13_flag'),
     path('level13.backup', views.level13_flag, name='l13_flag'),
