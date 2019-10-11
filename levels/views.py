@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse
+from django.urls import reverse
 from levels.forms import LoginForm, BestCompany, CreditCard
 from .utils import valid_credentials
 from .models import Content
@@ -103,7 +104,7 @@ def level19(request):
     else:
         form = BestCompany()
     context = {
-        'level': 19,
+        'level': reverse('l9'),
         'form': form,
         'error': error,
         'success': success,
