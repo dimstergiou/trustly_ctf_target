@@ -45,6 +45,8 @@ urlpatterns = [
     path('f8a8fd9b14a64a8d65d5d43c78a9e132', views.level19, name='l19'),
 
     path('level20', views.level20, name='l20'),
+    path('51651d30a9b0fda668b552f58213134f', views.level20, name='l20'),
+
     path('level22', views.level22, name='l22'),
     path('level23', views.level23, name='l23'),
     path('robots.txt', views.level23_robots, name='l23_robots'),
