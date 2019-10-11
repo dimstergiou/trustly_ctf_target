@@ -12,6 +12,8 @@ urlpatterns = [
     path('c341b271f5dba18dd4099435670a2c74', views.level1, name='l1'),
 
     path('level2', views.level2, name='l2'),
+    path('3105bcfda5ac6fb239ab134c6724673d', views.level2, name='l2'),
+
     path('level4', views.level4, name='l4'),
     path('level7', views.level7, name='l7'),
     path('level9', views.level9, name='l9'),
