@@ -39,6 +39,8 @@ urlpatterns = [
     path('c16805f9d36d6f1903633d6cc648f8cf', views.level16, name='l16'),
 
     path('level17', views.level17, name='l17'),
+    path('174d41f50272a75023281ff31aa698ea', views.level17, name='l17'),
+
     path('level19', views.level19, name='l19'),
     path('level20', views.level20, name='l20'),
     path('level22', views.level22, name='l22'),
