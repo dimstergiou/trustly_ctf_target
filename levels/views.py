@@ -12,18 +12,18 @@ def indexDemo(request):
     return render(request, "index2.html", {})
 
 def level1(request):
-    return render(request, "levels/l1.html", {'level':1})
+    return render(request, "levels/l1.html", {'level': reverse('l1')})
 
 def level2(request):
-    return render(request, "levels/l2.html", {'level':2})
+    return render(request, "levels/l2.html", {'level': reverse('l2')})
 
 def level4(request):
-    response = render(request, "levels/l4.html", {'level':4})
+    response = render(request, "levels/l4.html", {'level': reverse('l4')})
     response.set_cookie(key='flag', value='flag{hungry}', path=request.path)
     return response
 
 def level7(request):
-    response = render(request, "levels/l7.html", {'level': 7})
+    response = render(request, "levels/l7.html", {'level': reverse('l7')})
     response['here_is_the_flag'] = 'flag{dimitrios}'
     return response
 
@@ -42,7 +42,7 @@ def level9(request):
     else:
         form = LoginForm()
     context = {
-        'level': 9,
+        'level': reverse('l9'),
         'form': form,
         'error': error,
         'success': success,
@@ -50,7 +50,7 @@ def level9(request):
     return render(request, "levels/l9.html", context)
 
 def level12(request):
-    return render(request, "levels/l12.html", {'level':12})
+    return render(request, "levels/l12.html", {'level': reverse('l12')})
 
 def level13(request):
     return render(request, "levels/l13.html", {'level':13})
@@ -73,7 +73,7 @@ def level15(request):
             error = '0 results found!'
 
     context = {
-        'level': 15,
+        'level': reverse('l15'),
         'error': error,
         'success': success,
         'result' : result
@@ -81,10 +81,10 @@ def level15(request):
     return render(request, "levels/l15.html", context)
 
 def level16(request):
-    return render(request, "levels/l16.html", {'level':16})
+    return render(request, "levels/l16.html", {'level': reverse('l16')})
 
 def level17(request):
-    return render(request, "levels/l17.html", {'level':17})
+    return render(request, "levels/l17.html", {'level': reverse('l17')})
 
 def level19(request):
     error = None
@@ -108,17 +108,17 @@ def level19(request):
     return render(request, "levels/l19.html", context)
 
 def level20(request):
-    return render(request, "levels/l20.html", {'level':20})
+    return render(request, "levels/l20.html", {'level': reverse('l20')})
 
 def level22(request):
-    response = render(request, "levels/l22.html", {'level':22})
+    response = render(request, "levels/l22.html", {'level':reverse('l22')})
     secret = request.headers.get('Secret')
     if str(secret).lower() == 'innovation':
         response['here_is_the_flag'] = 'flag{awesome}'
     return response
 
 def level23(request):
-    return render(request, "levels/l23.html", {'level':23})
+    return render(request, "levels/l23.html", {'level':reverse('l23')})
 
 def level23_robots(request):
     return HttpResponse('flag{ultron}')
@@ -127,7 +127,7 @@ def level24(request):
     if request.user_agent.is_mobile:
         return HttpResponse('flag{anna}')
     else:
-        return render(request, "levels/l24.html", {'level':24})
+        return render(request, "levels/l24.html", {'level': reverse('l24')})
 
 def level25(request):
     error = None
@@ -144,7 +144,7 @@ def level25(request):
     else:
         form = CreditCard()
     context = {
-        'level': 25,
+        'level': reverse('l25'),
         'form': form,
         'error': error,
         'success': success,
