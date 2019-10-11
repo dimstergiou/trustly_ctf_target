@@ -7,7 +7,10 @@ import hashlib
 urlpatterns = [
     path('', views.index, name='index'),
     path('caf7e7bf96a799f0547469cb698bfb68', views.indexDemo, name='index'),
+
     path('level1', views.level1, name='l1'),
+    path('c341b271f5dba18dd4099435670a2c74', views.level1, name='l1'),
+
     path('level2', views.level2, name='l2'),
     path('level4', views.level4, name='l4'),
     path('level7', views.level7, name='l7'),
