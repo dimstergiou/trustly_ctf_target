@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from levels.models import Content
+
+admin.site.register(Content)

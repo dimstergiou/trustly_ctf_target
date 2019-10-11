@@ -4,21 +4,30 @@
 
     <h2>Level {{ level }}</h2>
     <br/>
-    <h3>CISCO CNR Login System</h3>
+    <h3>You know what to do</h3>
+    <br>
     <form action="" method="post">
         {%  csrf_token %}
-        {{ form }}
-        <br>
-        <button type="submit" class="btn btn-primary">Log in</button>
+        <label for="textBox">Input:</label>
+        <input type="text" name="input" id="textBox" required>
+        <p>
+        <button type="submit" class="btn btn-primary">Click me</button>
     </form>
-
+    <!-- Try some names like Per, Michael, Dimitrios -->
     <br>
     {% if error %}
         <p class="alert alert-danger">{{ error }}</p>
     {% endif %}
     {% if success %}
-        <p class="alert alert-primary">{{ success }}</p>
+        {% for content in result %}
+            <div class="container alert alert-primary">
+                User: {{ content.name }}<br>
+                Data: {{ content.data }}
+            </div>
+        {% endfor %}
     {% endif %}
     <br>
 
 {% endblock %}
+
+

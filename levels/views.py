@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from levels.forms import LoginForm, BestCompany, CreditCard
 from .utils import valid_credentials
+from .models import Content
 import pycard
 
 def index(request):
@@ -57,6 +58,28 @@ def level13(request):
 
 def level13_flag(request):
     return HttpResponse('flag{tdd}')
+
+def level15(request):
+    error = None
+    success = None
+    result = None
+    if request.method == 'POST':
+        input = request.POST.get('input')
+        query = "SELECT * from levels_content WHERE name = '%s'" % input
+        result = Content.objects.raw(query)
+        if result:
+            success = True
+            result = result
+        else:
+            error = '0 results found!'
+
+    context = {
+        'level': 15,
+        'error': error,
+        'success': success,
+        'result' : result
+    }
+    return render(request, "levels/l15.html", context)
 
 def level16(request):
     return render(request, "levels/l16.html", {'level':16})
