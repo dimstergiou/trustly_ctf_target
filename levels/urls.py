@@ -52,9 +52,11 @@ urlpatterns = [
 
     path('level23', views.level23, name='l23'),
     path('7cd319f0748f4daa37749621919d64bd', views.level23, name='l23'),
-
     path('robots.txt', views.level23_robots, name='l23_robots'),
+
     path('level24', views.level24, name='l24'),
+    path('89e2e6a589eb8ca461a6e10abd3c585c', views.level24, name='l24'),
+
     path('level25', views.level25, name='l25'),
 
 ]
