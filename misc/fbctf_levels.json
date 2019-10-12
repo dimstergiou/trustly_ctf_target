@@ -1,0 +1,666 @@
+{
+    "levels": [
+        {
+            "type": "quiz",
+            "title": "Finding some basic information",
+            "active": true,
+            "description": "What is the serial number of Trustly's SSL certificate for the trustly.com website? (The answer must contain spaces)",
+            "entity_iso_code": "AU",
+            "category": "Quiz",
+            "points": 100,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "08 C7 9C CC 14 62 89 E4 F1 71 BA 10 64 B3 58 59",
+            "hint": "Have you tried inspecting the certificate for all its properties?",
+            "penalty": 30,
+            "links": [],
+            "attachments": []
+        },
+        {
+            "type": "quiz",
+            "title": "Using 3rd party libraries sometimes makes life easier",
+            "active": false,
+            "description": "Protecting against XSS, CSRF and SQLi can be a daunting task. However, one can always use a 3rd party library recommended by OWASP to ensure that they don't need to re-invent the wheel (5 letters)",
+            "entity_iso_code": "CU",
+            "category": "Quiz",
+            "points": 100,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "ESAPI",
+            "hint": "Have you tried Googling for \"OWASP library\"?",
+            "penalty": 30,
+            "links": [],
+            "attachments": []
+        },
+        {
+            "type": "quiz",
+            "title": "Protecting applications",
+            "active": false,
+            "description": "Firewalls are a well-known security control and offer some level of protection. However, traditional firewalls cannot help with application control so we need to use another type of firewall if we really want to control application traffic (3 letters)",
+            "entity_iso_code": "CL",
+            "category": "Quiz",
+            "points": 100,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "WAF",
+            "hint": "Try Googling \"firewalls for applications\"",
+            "penalty": 30,
+            "links": [],
+            "attachments": []
+        },
+        {
+            "type": "quiz",
+            "title": "Following a model is good",
+            "active": false,
+            "description": "The OWASP SAMM defines 4 Business Functions: Governance, Construction, Verification and ? (10 letters)",
+            "entity_iso_code": "TD",
+            "category": "Quiz",
+            "points": 100,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "Deployment",
+            "hint": "Try Googling \"OWASP SAMM business functions\"",
+            "penalty": 30,
+            "links": [],
+            "attachments": []
+        },
+        {
+            "type": "quiz",
+            "title": "Knowing your way around policies",
+            "active": false,
+            "description": "Trustly has established a number of policies, standards and guidelines. What is the code for the procedure detailing how we work with technical vulnerabilities? (9 letter, use dots)",
+            "entity_iso_code": "ZW",
+            "category": "Quiz",
+            "points": 100,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "ISP.11.01",
+            "hint": "Have you tried looking in Trustly's Confluence for the security policies?",
+            "penalty": 30,
+            "links": [],
+            "attachments": []
+        },
+        {
+            "type": "quiz",
+            "title": "Sometimes shit happens",
+            "active": false,
+            "description": "We have build a really solid systems, but sometimes shit happens and we need to deal with an incident. Where to you report an incident? (Email address)",
+            "entity_iso_code": "AF",
+            "category": "Quiz",
+            "points": 100,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "support@trustly.com",
+            "hint": "Maybe check October's CEO Lunch presentation for the incident management slide?",
+            "penalty": 30,
+            "links": [],
+            "attachments": []
+        },
+        {
+            "type": "quiz",
+            "title": "Sometimes shit happens (pt 2)",
+            "active": false,
+            "description": "It happens to all of us. We forget where we left our keys, we lose our phones and laptops. We try to mitigate this by centrally managing the Trustly equipment (phones and laptops) so we can remotely wipe our devices when they are lost. What's the name of the platform we use? (4 letters)",
+            "entity_iso_code": "SD",
+            "category": "Quiz",
+            "points": 100,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "JAMF",
+            "hint": "Start the \"Trustly Self Service\" application and look around for the vendor name",
+            "penalty": 30,
+            "links": [],
+            "attachments": []
+        },
+        {
+            "type": "quiz",
+            "title": "How to distinguish phones",
+            "active": false,
+            "description": "This 15-digit number is used to identify mobile devices in mobile networks. We are not looking for an actual number, we are looking for the name of the number (4 letters)",
+            "entity_iso_code": "MA",
+            "category": "Quiz",
+            "points": 100,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "IMEI",
+            "hint": "Try Googling for \"15 digit mobile identification number\"",
+            "penalty": 0,
+            "links": [],
+            "attachments": []
+        },
+        {
+            "type": "quiz",
+            "title": "Sometimes shit happens (pt 3)",
+            "active": false,
+            "description": "If a data breach occurs, we need to report it to the Data Protection Authority within a specific time limit (in hours). What is this specific time limit? (2 digits)",
+            "entity_iso_code": "CR",
+            "category": "Quiz",
+            "points": 100,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "72",
+            "hint": "Try Googling \"GDPR reporting timeline\"",
+            "penalty": 0,
+            "links": [],
+            "attachments": []
+        },
+        {
+            "type": "quiz",
+            "title": "Diving into the internals",
+            "active": false,
+            "description": "When the Trustly payment service performs a \"Withdraw\" operation, there is an attribute that defines what it should be shown on the end user's bank statement. What is the name of the attribute? (16 letters)",
+            "entity_iso_code": "TZ",
+            "category": "Quiz",
+            "points": 100,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "ShopperStatement",
+            "hint": "Have you tried checking the public developer documentation for the Withdraw action?",
+            "penalty": 30,
+            "links": [],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "Yoda",
+            "active": false,
+            "description": "Follow the link and try to find the flag",
+            "entity_iso_code": "ZA",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{ctftrustly}",
+            "hint": "Have you tried looking into the source code?",
+            "penalty": 50,
+            "links": [
+                "http:\/\/trustlyctf.herokuapp.com\/c341b271f5dba18dd4099435670a2c74"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "Base",
+            "active": false,
+            "description": "Follow the link and try to find the flag",
+            "entity_iso_code": "BF",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{innovation}",
+            "hint": "A broken image can reveal a lot of information. Have you checked the image thoroughly?",
+            "penalty": 50,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/3105bcfda5ac6fb239ab134c6724673d"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "Using an app",
+            "active": false,
+            "description": "Observe the attached file and try to deduce the flag",
+            "entity_iso_code": "EC",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{easy_start}",
+            "hint": "Use a QR code reader app, be patient and pay attention",
+            "penalty": 50,
+            "links": [],
+            "attachments": [
+                {
+                    "filename": "qr-code_3cde91561d832f81b983c05c7d44889d.png",
+                    "type": "image\/png"
+                }
+            ]
+        },
+        {
+            "type": "flag",
+            "title": "Cookie monster",
+            "active": false,
+            "description": "Follow the link and try to find the flag",
+            "entity_iso_code": "MR",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{hungry}",
+            "hint": "There is a relationship between web browsing and cookies. Have you checked what cookies this site serves?",
+            "penalty": 50,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/c9dfacd4ab90728131cba2fa604329da"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "Look deeper",
+            "active": false,
+            "description": "Observe the attached file and try to deduce the flag. Sometime things can be hidden within things",
+            "entity_iso_code": "CF",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{communication}",
+            "hint": "Messages can be hidden with steganography. Maybe you can check the image for something hidden in it?",
+            "penalty": 50,
+            "links": [],
+            "attachments": [
+                {
+                    "filename": "lookdeeper_ab93b7b9634caae11d140309536c500f.png",
+                    "type": "image\/png"
+                }
+            ]
+        },
+        {
+            "type": "flag",
+            "title": "The sea",
+            "active": false,
+            "description": "We managed to capture some network traffic. Could it be that the flag is hiding in this capture?",
+            "entity_iso_code": "KP",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{dolphin}",
+            "hint": "The flag will always contain the word flag. Can you search with a tool in this capture to find the word flag?",
+            "penalty": 50,
+            "links": [],
+            "attachments": [
+                {
+                    "filename": "seacreature_0b040e7779277d73a30f5c1eadd8c136.pcap",
+                    "type": "application\/octet-stream"
+                }
+            ]
+        },
+        {
+            "type": "flag",
+            "title": "Keep your head up",
+            "active": false,
+            "description": "Your web browser renders most of the contents of the page, but not everything that is exchanged over an HTTP call.",
+            "entity_iso_code": "BY",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{dimitrios}",
+            "hint": "Have you tried checking the headers of this HTTP call?",
+            "penalty": 50,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/061d06844f75ab4a77087f83f09f1bec"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "Java power",
+            "active": false,
+            "description": "Download the Java app and try to find the flag in it!",
+            "entity_iso_code": "AO",
+            "category": "None",
+            "points": 400,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{javaomg}",
+            "hint": "The .jar file is essential a .zip file. Try to deconstruct the files in the .jar to see if you can find the flag. Keep in mind, there are several ways to represent a string!",
+            "penalty": 100,
+            "links": [],
+            "attachments": [
+                {
+                    "filename": "HelloWorld_4e727d10d78de93836a648b97a024008.jar",
+                    "type": "application\/java-archive"
+                }
+            ]
+        },
+        {
+            "type": "flag",
+            "title": "Please login",
+            "active": false,
+            "description": "Follow the link and try to find the flag",
+            "entity_iso_code": "MX",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{lego}",
+            "hint": "Some applications have default credentials - maybe if you check on the web you can find some?",
+            "penalty": 50,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/eaff21cfa63a828f34f02f4bc739a5de"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "The sound of silence",
+            "active": false,
+            "description": "Listen to this audio file and find the flag. Remember, the flag must be submitted as: flag{the_flag_you_found}",
+            "entity_iso_code": "NI",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{magical}",
+            "hint": "Some say that by manipulating a recording you can hear the devil talk!",
+            "penalty": 50,
+            "links": [],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "See, believe",
+            "active": false,
+            "description": "The flag is somewhere in this image. Remember that the flag must be presented in the form: flag{the_flag_you_found}",
+            "entity_iso_code": "GY",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{pewdiepie}",
+            "hint": "Images have metadata. Find a tool to check the images metadata",
+            "penalty": 50,
+            "links": [],
+            "attachments": [
+                {
+                    "filename": "seebelieve_6ad402c4022356c8c639dd9062d6f0ca.jpg",
+                    "type": "image\/jpeg"
+                }
+            ]
+        },
+        {
+            "type": "flag",
+            "title": "Counter Strike",
+            "active": false,
+            "description": "Follow the link and try to find the flag",
+            "entity_iso_code": "AZ",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{checkout}",
+            "hint": "Have a look at the file loaded by the page - one of them might hold the secret",
+            "penalty": 50,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/e3cb9dac40a829e5d0194b8fadc5ea0b"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "Lost and found",
+            "active": false,
+            "description": "Follow the link and try to find the flag",
+            "entity_iso_code": "OM",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{tdd}",
+            "hint": "Sometimes old file might remain on the server. Try some combinations based on the level name",
+            "penalty": 50,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/0fc1d6918da0bacc7d8b3dcbf25853ad"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "Don't blame the victim",
+            "active": false,
+            "description": "We have extracted a dump from a database. Someone has been victimized. Can you find the flag in the dump? Remember to submit the flag in the form: flag{the_flag_you_found}",
+            "entity_iso_code": "NO",
+            "category": "None",
+            "points": 300,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{tacos}",
+            "hint": "Sometimes password are stored hashed without any salt. Some of these password are really easy to crack, even online",
+            "penalty": 75,
+            "links": [],
+            "attachments": [
+                {
+                    "filename": "dbdump_51c52297c88b174548c4b8720ccaea52.txt",
+                    "type": "text\/plain"
+                }
+            ]
+        },
+        {
+            "type": "flag",
+            "title": "I made this",
+            "active": false,
+            "description": "Follow the link and try to find the flag",
+            "entity_iso_code": "JP",
+            "category": "None",
+            "points": 300,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{paok}",
+            "hint": "The page seems to be querying an SQL database. Maybe we can play with it?",
+            "penalty": 75,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/697508bad63a602679c9425778ac0faf"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "Evil incarnate",
+            "active": false,
+            "description": "Follow the link and try to find the flag",
+            "entity_iso_code": "TM",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{iframe}",
+            "hint": "Does this page really need to load additional resources?",
+            "penalty": 50,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/c16805f9d36d6f1903633d6cc648f8cf"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "Seeing the tree",
+            "active": false,
+            "description": "Follow the link and try to find the flag\n",
+            "entity_iso_code": "VN",
+            "category": "None",
+            "points": 100,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{banks}",
+            "hint": "There are at least 2 ways to find this flag. One involves dragging your mouse",
+            "penalty": 20,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/174d41f50272a75023281ff31aa698ea"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "Source of knowledge",
+            "active": false,
+            "description": "You can find knowledge in many places, but in Trustly we tend to have it in one place. Find the place, find the flag",
+            "entity_iso_code": "NA",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{yggdrasil}",
+            "hint": "Maybe somewhere in Confluence you can find security related things...",
+            "penalty": 50,
+            "links": [],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "Cheating",
+            "active": false,
+            "description": "Follow the link and try to find the flag",
+            "entity_iso_code": "MZ",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{oscar}",
+            "hint": "Clients cannot be trusted. Maybe if the server doesn't validate we can achieve our goal?",
+            "penalty": 50,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/f8a8fd9b14a64a8d65d5d43c78a9e132"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "Denmark",
+            "active": false,
+            "description": "Follow the link and try to find the flag\n",
+            "entity_iso_code": "AR",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{malta}",
+            "hint": "One of the very first methods of obfuscation - didn't last long, it was rotten",
+            "penalty": 50,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/51651d30a9b0fda668b552f58213134f"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "The chosen one",
+            "active": false,
+            "description": "Observe the attached file and try to deduce the flag",
+            "entity_iso_code": "KE",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{steve}",
+            "hint": "Office files tend to contain dangerous code - do you know where?",
+            "penalty": 50,
+            "links": [],
+            "attachments": [
+                {
+                    "filename": "Q1_2020_Report_d5ae1acc627aa8dd23cc0f26262436e7.doc",
+                    "type": "application\/msword"
+                }
+            ]
+        },
+        {
+            "type": "flag",
+            "title": "Secret agent",
+            "active": false,
+            "description": "Follow the link and try to find the flag",
+            "entity_iso_code": "PT",
+            "category": "None",
+            "points": 500,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{awesome}",
+            "hint": "Authorization can be done with multiple methods. Passwords, or headers. Maybe if you try to send a special header to the page it will work",
+            "penalty": 100,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/a71e79319ff261e4e780c0020c10e39c"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "Annihilate",
+            "active": false,
+            "description": "Follow the link and try to find the flag",
+            "entity_iso_code": "BR",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{ultron}",
+            "hint": "There is usually a special file on every website that governs how search engines access your site",
+            "penalty": 50,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/7cd319f0748f4daa37749621919d64bd"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "It looks fine from here",
+            "active": false,
+            "description": "Follow the link and try to find the flag",
+            "entity_iso_code": "ID",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{Anna}",
+            "hint": "Not all pages display the same on all devices. Maybe if you access the page from a different device you will see something different",
+            "penalty": 50,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/89e2e6a589eb8ca461a6e10abd3c585c"
+            ],
+            "attachments": []
+        },
+        {
+            "type": "flag",
+            "title": "You can also pay with Trustly",
+            "active": false,
+            "description": "Follow the link and try to find the flag",
+            "entity_iso_code": "RO",
+            "category": "None",
+            "points": 200,
+            "bonus": 30,
+            "bonus_dec": 10,
+            "bonus_fix": 30,
+            "flag": "flag{money}",
+            "hint": "There are a number of valid credit card numbers used for testing, just find one of those",
+            "penalty": 50,
+            "links": [
+                "https:\/\/trustlyctf.herokuapp.com\/981c0ba2539e9e053b898ba29a73376d"
+            ],
+            "attachments": []
+        }
+    ]
+}
