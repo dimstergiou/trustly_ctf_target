@@ -60,4 +60,7 @@ urlpatterns = [
     path('level25', views.level25, name='l25'),
     path('981c0ba2539e9e053b898ba29a73376d', views.level25, name='l25'),
 
+    path('level26', views.level26, name='l26'),
+    path('5abd0b5bc52d246b1f7435ab42c923ce', views.level26, name='l26'),
+
 ]
