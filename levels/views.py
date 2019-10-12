@@ -154,11 +154,11 @@ def level25(request):
 def level26(request):
     error = None
     success = None
-    button = request.POST.get('flag')
-    if request.user_agent.is_bot:
-        success = 'flag{bing}'
-    else:
-        error = 'You are not Google. User agent: ' + str(request.user_agent)
+    if request.method == 'POST':
+        if request.user_agent.is_bot:
+            success = 'flag{bing}'
+        else:
+            error = 'You are not Google. User agent: ' + str(request.user_agent)
 
     context = {
         'level': reverse('l26'),
