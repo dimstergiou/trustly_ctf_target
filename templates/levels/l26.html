@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+    <h2>Level {{ level }}</h2>
+    <br/>
+    <h3>Easy flag</h3>
+    <p>Click the button, get the flag</p>
+
+    <form action="" method="post">
+        {%  csrf_token %}
+        <button type="submit" name="flag" class="btn btn-primary btn-large" value="1">Flag</button>
+    </form>
+
+    <br>
+    {% if error %}
+        <p class="alert alert-danger">{{ error }}</p>
+    {% endif %}
+    {% if success %}
+        <p class="alert alert-primary">{{ success }}</p>
+    {% endif %}
+    <br>
+
+{% endblock %}

@@ -150,3 +150,19 @@ def level25(request):
         'success': success,
     }
     return render(request, "levels/l25.html", context)
+
+def level26(request):
+    error = None
+    success = None
+    button = request.POST.get('flag')
+    if request.user_agent.is_bot:
+        success = 'flag{bing}'
+    else:
+        error = 'You are not Google. User agent: ' + str(request.user_agent)
+
+    context = {
+        'level': reverse('l26'),
+        'error': error,
+        'success': success,
+    }
+    return render(request, "levels/l26.html", context)
