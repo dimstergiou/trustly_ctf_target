@@ -169,3 +169,19 @@ def level26(request):
         'success': success,
     }
     return render(request, "levels/l26.html", context)
+
+def level27(request):
+    success = None
+    context = {
+        'level': reverse('levels:l27'),
+        'success': success,
+    }
+    flag_value = request.COOKIES.get('flag')
+    response = render(request, "levels/l27.html", context)
+    if 'flag' not in request.COOKIES:
+        response.set_cookie(key='flag', value='0', path=request.path)
+    if flag_value == '1':
+        print(flag_value)
+        context['success'] = 'flag{john}'
+        return render(request, "levels/l27.html", context)
+    return response
