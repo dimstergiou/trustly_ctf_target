@@ -121,6 +121,9 @@ def level23(request):
     return render(request, "levels/l23.html", {'level':reverse('l23')})
 
 def level23_robots(request):
+    return HttpResponse('User-Agent: *\nDisallow /aa2646a667ee1cd83235786dccef4a26/')
+
+def level23_flag(request):
     return HttpResponse('flag{ultron}')
 
 def level24(request):
