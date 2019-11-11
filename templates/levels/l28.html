@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+    <h2>Level {{ level }}</h2>
+    <br/>
+    <h3>Accessible only from internal IP addresses</h3>
+    <p>Unless you are coming from our internal gateway, 1.1.1.1, you can't access this!</p>
+
+    <br>
+    {% if error %}
+        <p class="alert alert-danger">{{ error }}</p>
+    {% endif %}
+    {% if success %}
+        <p class="alert alert-primary">{{ success }}</p>
+    {% endif %}
+    <br>
+
+{% endblock %}

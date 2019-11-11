@@ -185,3 +185,18 @@ def level27(request):
         context['success'] = 'flag{john}'
         return render(request, "levels/l27.html", context)
     return response
+
+def level28(request):
+    success = None
+    error = None
+    ip = request.headers.get('X-FORWARDED-FOR')
+    if ip == "1.1.1.1":
+        success = "flag{dorna}"
+    else:
+        error = "This site is only accessible from 1.1.1.1"
+    context = {
+        'level': reverse('levels:l28'),
+        'success': success,
+        'error': error,
+    }
+    return render(request, "levels/l28.html", context)
