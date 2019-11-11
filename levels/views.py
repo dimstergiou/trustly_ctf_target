@@ -186,7 +186,7 @@ def level27(request):
         return render(request, "levels/l27.html", context)
     return response
 
-def level28(request):
+def level29(request):
     success = None
     error = None
     ip = request.headers.get('X-FORWARDED-FOR')
@@ -195,8 +195,8 @@ def level28(request):
     else:
         error = "This site is only accessible from 1.1.1.1"
     context = {
-        'level': reverse('levels:l28'),
+        'level': reverse('levels:l29'),
         'success': success,
         'error': error,
     }
-    return render(request, "levels/l28.html", context)
+    return render(request, "levels/l29.html", context)
