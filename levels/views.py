@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 from django.urls import reverse
 from levels.forms import LoginForm, BestCompany, CreditCard
 from .utils import valid_credentials
@@ -200,3 +201,22 @@ def level29(request):
         'error': error,
     }
     return render(request, "levels/l29.html", context)
+
+def level30(request):
+    error = None
+    # if request.method == "GET" or request.method == "POST":
+    #     error = "You have failed to delete the /supersecret.txt file"
+    # if request.method == "DELETE":
+    #     success = "File deleted - flag{swtor}"
+    context = {
+        'level': reverse('levels:l30'),
+        'error': error,
+    }
+    return render(request, "levels/l30.html", context)
+
+@csrf_exempt
+def level30_d(request):
+    if request.method == "DELETE":
+        return HttpResponse('File deleted - flag{swtor}')
+    else:
+        return HttpResponse('Nothing to see here')

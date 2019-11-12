@@ -70,4 +70,7 @@ urlpatterns = [
     path('level29', views.level29, name='l29'),
     path('5c6bc24c2a39a92ff7088e773d274a2f', views.level29, name='l29'),
 
+    path('level30', views.level30, name='l30'),
+    path('26b0940fa792661fcfc23b19f98ef076', views.level30, name='l30'),
+    path('supersecret.txt', views.level30_d, name='l30_d'),
 ]
