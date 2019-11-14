@@ -74,6 +74,6 @@ urlpatterns = [
     path('26b0940fa792661fcfc23b19f98ef076', views.level30, name='l30'),
     path('supersecret.txt', views.level30_d, name='l30_d'),
 
-    # path('level33', views.level33, name='l33'),
-    path('12d189641890a128d7e4a216a39aff82', views.level33, name='l33'),
+    # path('level34', views.level34, name='l34'),
+    path('4f19f7a58b0e7a6ec078cf99ac627a01', views.level34, name='l34'),
 ]
