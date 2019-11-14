@@ -1,1 +1,1 @@
-web: gunicorn trustly_ctf_target.asgi --log-file -
+web: gunicorn trustly_ctf_target.asgi
