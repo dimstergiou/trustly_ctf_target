@@ -1,1 +1,1 @@
-web: daphne trustly_ctf_target.asgi:application
+web: daphne trustly_ctf_target.asgi:application --port $PORT --bind 0.0.0.0
