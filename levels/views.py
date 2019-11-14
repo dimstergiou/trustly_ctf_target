@@ -9,8 +9,8 @@ import pycard
 def index(request):
     return render(request, "index.html", {})
 
-def indexDemo(request):
-    return render(request, "index2.html", {})
+# def indexDemo(request):
+#     return render(request, "index2.html", {})
 
 def level1(request):
     return render(request, "levels/l1.html", {'level': reverse('levels:l1')})
@@ -220,3 +220,6 @@ def level30_d(request):
         return HttpResponse('File deleted - flag{swtor}')
     else:
         return HttpResponse('Nothing to see here')
+
+def level33(request):
+    return render(request, "levels/l33.html", {'level': reverse('levels:l33')})
