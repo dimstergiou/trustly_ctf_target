@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_user_agents',
+    'channels',
     'levels',
 ]
 
@@ -60,6 +61,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'trustly_ctf_target.urls'
+ASGI_APPLICATION = 'trustly_ctf_target.routing.application'
 
 TEMPLATES = [
     {
