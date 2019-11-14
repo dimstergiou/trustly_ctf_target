@@ -222,4 +222,5 @@ def level30_d(request):
         return HttpResponse('Nothing to see here')
 
 def level33(request):
+    # wscat -c ws://trustlyctf.herokuapp.com/flag
     return render(request, "levels/l33.html", {'level': reverse('levels:l33')})
