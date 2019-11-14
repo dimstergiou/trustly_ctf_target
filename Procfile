@@ -1,1 +1,1 @@
-web: daphne trustly_ctf_target.asgi
+web: daphne trustly_ctf_target.asgi:application
