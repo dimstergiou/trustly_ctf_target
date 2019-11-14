@@ -6,7 +6,7 @@ app_name = 'levels'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('caf7e7bf96a799f0547469cb698bfb68', views.indexDemo, name='index'),
+    # path('caf7e7bf96a799f0547469cb698bfb68', views.indexDemo, name='index'),
 
     # path('level1', views.level1, name='l1'),
     path('c341b271f5dba18dd4099435670a2c74', views.level1, name='l1'),
