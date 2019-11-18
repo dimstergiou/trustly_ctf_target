@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+from hashids import Hashids
+import sys
+
+hashids = Hashids(salt="c341b271f5dba18dd4099435670a2c74", min_length=8)
+
+print(hashids.encode(int(sys.argv[1])))
