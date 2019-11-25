@@ -174,12 +174,11 @@ def level27(request):
         'level': reverse('levels:l27'),
         'success': success,
     }
-    flag_value = request.COOKIES.get('flag')
+    flag_value = request.COOKIES.get('is_admin')
     response = render(request, "levels/l27.html", context)
-    if 'flag' not in request.COOKIES:
-        response.set_cookie(key='flag', value='0', path=request.path)
-    if flag_value == '1':
-        print(flag_value)
+    if 'is_admin' not in request.COOKIES:
+        response.set_cookie(key='is_admin', value='0', path=request.path)
+    if flag_value == '1' or flag_value.lower() == 'true':
         context['success'] = 'flag{john}'
         return render(request, "levels/l27.html", context)
     return response
