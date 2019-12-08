@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +10,13 @@
 
 </head>
 <body>
+ <header>
+      <section class="container">
+        <a href="https://trustly.net" class="phx-logo">
+          <img src="{% static "levels/logo.png" %}" alt="Trustly Logo"/>
+        </a>
+      </section>
+</header>
 <div class="container" style="padding: 50px;">
     {% block page_content %}
     {% endblock %}
