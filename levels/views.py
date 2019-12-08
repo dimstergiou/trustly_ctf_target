@@ -119,7 +119,7 @@ def level23(request):
     return render(request, "levels/l23.html", {'level': reverse('levels:l23')})
 
 def level23_robots(request):
-    return HttpResponse('User-Agent: *\nDisallow /aa2646a667ee1cd83235786dccef4a26/', content_type='text/plain')
+    return HttpResponse('User-Agent: *\nDisallow /aa2646a667ee1cd83235786dccef4a26', content_type='text/plain')
 
 def level23_flag(request):
     return HttpResponse('flag{ultron}')
@@ -174,12 +174,11 @@ def level27(request):
         'level': reverse('levels:l27'),
         'success': success,
     }
-    flag_value = request.COOKIES.get('flag')
+    flag_value = request.COOKIES.get('is_admin')
     response = render(request, "levels/l27.html", context)
-    if 'flag' not in request.COOKIES:
-        response.set_cookie(key='flag', value='0', path=request.path)
-    if flag_value == '1':
-        print(flag_value)
+    if 'is_admin' not in request.COOKIES:
+        response.set_cookie(key='is_admin', value='0', path=request.path)
+    if flag_value == '1' or flag_value.lower() == 'true':
         context['success'] = 'flag{john}'
         return render(request, "levels/l27.html", context)
     return response

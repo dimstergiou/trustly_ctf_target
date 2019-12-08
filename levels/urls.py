@@ -1,6 +1,5 @@
 from django.urls import path
 from . import views
-import hashlib
 
 app_name = 'levels'
 
