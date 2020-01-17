@@ -210,9 +210,8 @@ def level27(request):
 def level29(request):
     success = None
     error = None
-    print(f'Headers: {request.headers}')
     ip = request.headers.get('X-Forwarded-For')
-    if ip == "1.1.1.1":
+    if "1.1.1.1" in ip:
         success = "flag{dorna}"
     else:
         error = "This site is only accessible from 1.1.1.1"
