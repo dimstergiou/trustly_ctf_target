@@ -6,24 +6,30 @@ from .utils import valid_credentials
 from .models import Content
 import pycard
 
+
 def index(request):
     return render(request, "index.html", {})
+
 
 def level1(request):
     return render(request, "levels/l1.html", {'level': reverse('levels:l1')})
 
+
 def level2(request):
     return render(request, "levels/l2.html", {'level': reverse('levels:l2')})
+
 
 def level4(request):
     response = render(request, "levels/l4.html", {'level': reverse('levels:l4')})
     response.set_cookie(key='flag', value='flag{hungry}', path=request.path)
     return response
 
+
 def level7(request):
     response = render(request, "levels/l7.html", {'level': reverse('levels:l7')})
     response['here_is_the_flag'] = 'flag{dimitrios}'
     return response
+
 
 def level9(request):
     error = None
@@ -47,14 +53,18 @@ def level9(request):
     }
     return render(request, "levels/l9.html", context)
 
+
 def level12(request):
     return render(request, "levels/l12.html", {'level': reverse('levels:l12')})
+
 
 def level13(request):
     return render(request, "levels/l13.html", {'level': 13})
 
+
 def level13_flag(request):
     return HttpResponse('flag{tdd}')
+
 
 def level15(request):
     error = None
@@ -78,11 +88,14 @@ def level15(request):
     }
     return render(request, "levels/l15.html", context)
 
+
 def level16(request):
     return render(request, "levels/l16.html", {'level': reverse('levels:l16')})
 
+
 def level17(request):
     return render(request, "levels/l17.html", {'level': reverse('levels:l17')})
+
 
 def level19(request):
     error = None
@@ -105,8 +118,10 @@ def level19(request):
     }
     return render(request, "levels/l19.html", context)
 
+
 def level20(request):
     return render(request, "levels/l20.html", {'level': reverse('levels:l20')})
+
 
 def level22(request):
     response = render(request, "levels/l22.html", {'level':reverse('levels:l22')})
@@ -115,20 +130,25 @@ def level22(request):
         response['here_is_the_flag'] = 'flag{awesome}'
     return response
 
+
 def level23(request):
     return render(request, "levels/l23.html", {'level': reverse('levels:l23')})
+
 
 def level23_robots(request):
     return HttpResponse('User-Agent: *\nDisallow /aa2646a667ee1cd83235786dccef4a26', content_type='text/plain')
 
+
 def level23_flag(request):
     return HttpResponse('flag{ultron}')
+
 
 def level24(request):
     if request.user_agent.is_mobile:
         return HttpResponse('flag{anna}')
     else:
         return render(request, "levels/l24.html", {'level': reverse('levels:l24')})
+
 
 def level25(request):
     error = None
@@ -152,6 +172,7 @@ def level25(request):
     }
     return render(request, "levels/l25.html", context)
 
+
 def level26(request):
     error = None
     success = None
@@ -167,6 +188,7 @@ def level26(request):
         'success': success,
     }
     return render(request, "levels/l26.html", context)
+
 
 def level27(request):
     success = None
@@ -184,6 +206,7 @@ def level27(request):
             return render(request, "levels/l27.html", context)
     return response
 
+
 def level29(request):
     success = None
     error = None
@@ -199,6 +222,7 @@ def level29(request):
     }
     return render(request, "levels/l29.html", context)
 
+
 def level30(request):
     error = None
     # if request.method == "GET" or request.method == "POST":
@@ -211,12 +235,14 @@ def level30(request):
     }
     return render(request, "levels/l30.html", context)
 
+
 @csrf_exempt
 def level30_d(request):
     if request.method == "DELETE":
         return HttpResponse('File deleted - flag{swtor}')
     else:
         return HttpResponse('Nothing to see here')
+
 
 def level34(request):
     # wscat -c ws://trustlyctf.herokuapp.com/flag
