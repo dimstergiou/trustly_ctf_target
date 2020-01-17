@@ -178,9 +178,10 @@ def level27(request):
     response = render(request, "levels/l27.html", context)
     if 'is_admin' not in request.COOKIES:
         response.set_cookie(key='is_admin', value='0', path=request.path)
-    if flag_value == '1' or flag_value.lower() == 'true':
-        context['success'] = 'flag{john}'
-        return render(request, "levels/l27.html", context)
+    if flag_value:
+        if flag_value == '1' or flag_value.lower() == 'true':
+            context['success'] = 'flag{john}'
+            return render(request, "levels/l27.html", context)
     return response
 
 def level29(request):
