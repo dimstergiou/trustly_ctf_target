@@ -210,7 +210,7 @@ def level27(request):
 def level29(request):
     success = None
     error = None
-    ip = request.headers.get('X-FORWARDED-FOR')
+    ip = request.headers.get('X-Forwarded-For')
     if ip == "1.1.1.1":
         success = "flag{dorna}"
     else:
